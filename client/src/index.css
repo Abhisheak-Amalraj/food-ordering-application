@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Pacifico&family=Rubik&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
 body {
   margin: 0;
@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-family: 'Pacifico', cursive !important; */
-  font-family: 'Pacifico', cursive !important;
+  font-family: 'Rubik', sans-serif;
 }
 
 code {

@@ -24,6 +24,7 @@ export const addToCart=(food , quantity , varient)=>(dispatch , getState)=>{
         }
         else{
             dispatch({type:'ADD_TO_CART' , payload : cartItem})
+            alert('Item added successfully')
         }
        
     }

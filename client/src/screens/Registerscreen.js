@@ -65,9 +65,9 @@ export default function Registerscreen() {
               required
               onChange={(e)=>{setcpassword(e.target.value)}}
             />
-            <button onClick={register} className="btn mt-3 mb-3">REGISTER</button>
+            <button onClick={register} className="btn mt-3 mb-3" to='/'>REGISTER</button>
             <br/>
-            <a style={{color:'black'}} href="/login">Click Here To Login</a>
+            {/* <a style={{color:'black'}} href="/login">Click Here To Login</a> */}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ export default function Filter() {
         <div className="container">
 
         
-        <div className="row justify-content-center shadow-lg p-3 mb-5 bg-white rounded">
+        <div className="filter row justify-content-center shadow-lg p-3 mb-5  rounded">
              <div className="col-md-3 w-100">
                       <input
                       onChange={(e)=>{setsearchkey(e.target.value)}}

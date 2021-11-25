@@ -72,7 +72,7 @@ router.post("/deletefood", async(req, res) => {
     const foodid = req.body.foodid
 
   try {
-    await food.findOneAndDelete({_id : foodid})
+    await Food.findOneAndDelete({_id : foodid})
     res.send('food Deleted successfully')
   } catch (error) {
       return res.status(400).json({ message: error });

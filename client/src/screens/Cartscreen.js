@@ -3,7 +3,12 @@ import {useSelector , useDispatch} from 'react-redux'
 import {addToCart} from '../actions/cartActions'
 import {deleteFromCart} from '../actions/cartActions'
 import Checkout from '../components/Checkout'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Cartscreen() {
+
+    AOS.init()
     
     const cartstate = useSelector(state=>state.cartReducer)
     const cartItems = cartstate.cartItems
@@ -11,15 +16,15 @@ export default function Cartscreen() {
     const dispatch = useDispatch()
     return (
         <div>
-            <div className="row justify-content-center p-2" data-aos='fade-down'>
+            <div className="row justify-content-center p-2" data-aos='fade-up' >
 
-                  <div className="col-md-6">
+                  <div className="col-md-6" >
                        <h2 style={{fontSize:'40px'}}>My Cart</h2>
                        
                        {cartItems.map(item=>{
                            return <div className="flex-container">
 
-                           <div className='text-left m-1 w-100'>
+                           <div className='text-left m-1 w-100' >
                                <h1>{item.name} [{item.varient}]</h1>
                                <h1>Price : {item.quantity} * {item.prices[0][item.varient]} = {item.price}</h1>
                                <h1 style={{display:'inline'}}>Quantity : </h1>

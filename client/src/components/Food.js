@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import { addToCart } from "../actions/cartActions";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Food({ food }) {
+
+  AOS.init()
+
   const [quantity, setquantity] = useState(1);
   const [varient, setvarient] = useState("normal");
 
@@ -20,6 +25,7 @@ export default function Food({ food }) {
 
   return (
     <div
+    data-aos='zoom-in'
       className="shadow-lg p-1 mb-5 bg-white rounded"
     >
       <div onClick={handleShow}>
@@ -71,6 +77,7 @@ export default function Food({ food }) {
         <div className="m-1 w-100">
           <button className="btn" onClick={addtocart}>
             ADD TO CART
+            
           </button>
         </div>
       </div>

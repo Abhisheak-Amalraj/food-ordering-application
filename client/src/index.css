@@ -103,19 +103,7 @@ th, td, tr{
 .filter{
   background-color:rgb(124, 228, 124) !important;
 }
-.login {
-  background-image: url(https://ak.picdn.net/shutterstock/videos/1074028913/thumb/7.jpg?ip=x480);
-  /* background-repeat: no-repeat !important; */
-  /* background-size: cover !important; */
-  height: 83vh;
-}
 
-.register {
-  background-image: url(https://ak.picdn.net/shutterstock/videos/1074028913/thumb/7.jpg?ip=x480);
-  /* background-repeat: no-repeat !important; */
-  /* background-size: cover !important; */
-  height: 83vh;
-}
 
 
 
